@@ -13,7 +13,7 @@ So, the coefficients method is concerned with calculating the values of a,b,c an
 
 Logic behind the code: -
 
-If the degree selected by the user is 2, after optimizing the cost function using the partial derivatives wrt _a_,_b_ and _c_, the following equations are obtained:-
+If the degree selected by the user is 2, after optimizing the cost function using the partial derivatives of the mean squared error function wrt _a_,_b_ and _c_, the following equations are obtained:-
 
 a) <img src="https://render.githubusercontent.com/render/math?math=\sum^{n}_{i=1}y_i=\sum^{n}_{i=1}a%2B\sum^{n}_{i=1}bx_i%2B\sum^{n}_{i=1}cx^2_i">
 
