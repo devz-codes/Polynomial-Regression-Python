@@ -58,12 +58,3 @@ class Polynomial_Regression:
             sse+=pow(self.y_val[i]-Polynomial_Regression.predict(self,self.x_val[i]),2)
         
         return (sst-sse)/sst
-
-
-x=[x for x in range(1,6)]
-y=[5,4,3,2,1]
-
-obj=Polynomial_Regression(x,y,1)
-
-print(obj.r_square())
-
