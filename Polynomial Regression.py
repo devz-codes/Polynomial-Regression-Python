@@ -32,10 +32,13 @@ class Polynomial_Regression:
         mt2=mt2.reshape(self.degree+1,self.degree+1)
         mt1=mt1.reshape(self.degree+1,1)
         
+        mt2=mt2.astype(np.float64)
+        mt1=mt1.astype(np.float64)
+        
         mt2=inv(mt2)
         coef=np.dot(mt2,mt1)
 
-        return coef.astype(np.float64)
+        return coef
     
     
     def predict(self,inp):
